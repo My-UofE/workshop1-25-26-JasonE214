@@ -25,7 +25,7 @@ def play_game_1(min_x=0, max_x=20):
             poss_values = [ x for x in poss_values if x < guess ]
         elif result==3:
             poss_values = [ x for x in poss_values if x > guess ]
-
+        print(poss_values)
         if len(poss_values) == 0:
             print("I got confused... Let me try again.")
             poss_values = list(range(min_x,max_x+1))
