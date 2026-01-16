@@ -24,4 +24,7 @@ def process_guess(letter, board, word):
         if l.lower() == letter.lower():
             guess = True
             board[i] = letter
-    return guess,board
+    return guess
+
+
+
