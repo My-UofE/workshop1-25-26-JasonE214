@@ -18,4 +18,10 @@ def check_higher_lower(current_val, next_val, user_input):
 
 # function to be used in game_3: Hangman
 def process_guess(letter, board, word):
-    pass
+    split_w = list(word)
+    guess = False
+    for i, l in enumerate(split_w):
+        if l.lower() == letter.lower():
+            guess = True
+            board[i] = letter
+    return guess, board
